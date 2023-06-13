@@ -28,7 +28,7 @@ and test an already existing figma design and ensure a full functionality and fr
 
 ## Usage
 Once the server is up and running, supply the credentials(email:"adeji@gmail.com" and password:"12345678") to login
-You must be logged in to access all other routes of the application
+You must be logged in to access other routes of the application.
 When you are in a mobile view use the side bar button to access sidebar and not the usual bar on top of the navbar
  
 ## Status
