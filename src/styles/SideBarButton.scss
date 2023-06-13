@@ -1,0 +1,43 @@
+@import '../styles/variables/mixins';
+
+.show-sidebar-button{
+    background-color: #9fa8b7;
+    position: fixed;
+    cursor: pointer;
+    top: 10rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+    font: 900;
+    font-size: 1.5rem;
+    z-index: 700;
+    transition: all 0.5s ease-in;
+    width: .9rem;
+    right: -30px;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+    rotate: 180deg;
+
+    &:hover{
+        background-color: #2d4f94;
+    }
+
+    @include mediumDevices {
+        display: none;
+       
+     }
+    
+      }
+      
+   .show-sidebar-button.visible{
+            right: 0;
+   }
+   .show-sidebar-button.reduce{
+            width: .7rem;            
+   }
+   .show-sidebar-button.enlarge{
+            width: 2rem;          
+   }

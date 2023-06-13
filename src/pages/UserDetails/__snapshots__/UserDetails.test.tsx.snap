@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserDetails should match snapshot 1`] = `
+<div
+  className="user-loading"
+>
+  <span
+    style={
+      Object {
+        "display": "inherit",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "animation": "react-spinners-SyncLoader-sync 0.6s 0.07s infinite ease-in-out",
+          "animationFillMode": "both",
+          "backgroundColor": "gray",
+          "borderRadius": "100%",
+          "display": "inline-block",
+          "height": "10px",
+          "margin": "2px",
+          "width": "10px",
+        }
+      }
+    />
+    <span
+      style={
+        Object {
+          "animation": "react-spinners-SyncLoader-sync 0.6s 0.14s infinite ease-in-out",
+          "animationFillMode": "both",
+          "backgroundColor": "gray",
+          "borderRadius": "100%",
+          "display": "inline-block",
+          "height": "10px",
+          "margin": "2px",
+          "width": "10px",
+        }
+      }
+    />
+    <span
+      style={
+        Object {
+          "animation": "react-spinners-SyncLoader-sync 0.6s 0.21000000000000002s infinite ease-in-out",
+          "animationFillMode": "both",
+          "backgroundColor": "gray",
+          "borderRadius": "100%",
+          "display": "inline-block",
+          "height": "10px",
+          "margin": "2px",
+          "width": "10px",
+        }
+      }
+    />
+  </span>
+</div>
+`;

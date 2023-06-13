@@ -1,0 +1,138 @@
+.log-in-page {
+  width: 100%;
+  height: 100%;
+}
+.log-in-page section.logo-section {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .log-in-page section.logo-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.log-in-page section.logo-section img {
+  width: 100%;
+  max-width: 600px;
+}
+.log-in-page section.logo-section .logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  top: 50px;
+  left: 92px;
+}
+.log-in-page section.logo-section .logo img.union {
+  width: 24.75px;
+  height: 25px;
+}
+.log-in-page section.logo-section .logo img.lendsqr {
+  margin-top: 0.4rem;
+  width: 138px;
+  height: 30px;
+}
+.log-in-page section.form-section {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 4rem;
+  position: relative;
+}
+.log-in-page section.form-section .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.log-in-page section.form-section .logo img.union {
+  width: 24.75px;
+  height: 25px;
+}
+.log-in-page section.form-section .logo img.lendsqr {
+  margin-top: 0.4rem;
+  width: 138px;
+  height: 30px;
+}
+@media screen and (min-width: 768px) {
+  .log-in-page section.form-section .logo {
+    display: none;
+  }
+}
+.log-in-page section.form-section .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.log-in-page section.form-section .container h1 {
+  line-height: 54.64px;
+  font-weight: 700;
+  size: 40px;
+  color: #213F7D;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.log-in-page section.form-section .container span.login-details-note {
+  margin-bottom: 1rem;
+  color: #545F7D;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.log-in-page section.form-section .container form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+.log-in-page section.form-section .container form div {
+  width: 100%;
+  position: relative;
+  margin-bottom: 1rem;
+  background: white;
+  border: 2px solid rgba(84, 95, 125, 0.15);
+  border-radius: 5px;
+}
+.log-in-page section.form-section .container form div input {
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-inline: 0.2rem;
+}
+.log-in-page section.form-section .container form span.forgot-password {
+  font-family: "Avenir Next";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: right;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: #39CDCC;
+}
+.log-in-page section.form-section .container form button {
+  width: 100%;
+  background: #39CDCC;
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+.log-in-page section.form-section .container form button span {
+  font-family: sans-serif;
+  text-align: center;
+  color: white;
+}
+@media screen and (min-width: 768px) {
+  .log-in-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}/*# sourceMappingURL=Login.css.map */
