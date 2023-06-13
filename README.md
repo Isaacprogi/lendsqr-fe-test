@@ -15,6 +15,7 @@ This project is basically an assessment from lendsqr on the front end engineerin
 and test an already existing figma design and ensure a full functionality and free flow of the application.
 
 ## Demo
+Demo Link:https://isaac-onyeka-anasonye-lendsqr-fe-test.onrender.com
 
 ## Installation
 1. Clone the repository: https://github.com/Isaacprogi/lendsqr-fe-test.git,
