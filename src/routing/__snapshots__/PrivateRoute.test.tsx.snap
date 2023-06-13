@@ -433,7 +433,7 @@ Array [
       <img
         alt="avatar"
         className="avatar"
-        src="profile.svg"
+        src="Profile.png"
       />
       <div>
         <span
@@ -474,7 +474,7 @@ Array [
       >
         <img
           alt=""
-          src="profile.svg"
+          src="Profile.png"
         />
       </div>
     </span>
@@ -516,7 +516,7 @@ Array [
           <img
             alt=""
             data-testid="avatar"
-            src="profile.svg"
+            src="Profile.png"
           />
         </span>
         <span

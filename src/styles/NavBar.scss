@@ -141,9 +141,7 @@
 
         .docs{
             text-decoration: underline;
-            text-transform: lowercase;
             cursor: pointer;
-            font-family: 'Roboto';
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
@@ -171,6 +169,7 @@
          overflow: hidden;
          border-radius: 100%;
          display: flex;
+         background: #e9d5ec;
 
          img{
             width: 100%;

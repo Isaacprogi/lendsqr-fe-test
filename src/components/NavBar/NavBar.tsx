@@ -6,7 +6,7 @@ import { FaSearch, FaTimes } from 'react-icons/fa'
 import { IoMdNotificationsOutline } from 'react-icons/io'
 import { IoMdArrowDropdown } from 'react-icons/io'
 import { AiFillBell } from 'react-icons/ai'
-import Me from '../../assets/images/profile.svg'
+import Me from '../../assets/images/Profile.png'
 import { HiDocument } from 'react-icons/hi'
 
 export const NavBar = () => {

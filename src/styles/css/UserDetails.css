@@ -112,7 +112,7 @@
   padding: 1rem;
 }
 .user-details-board .header-container .header-data .avatar {
-  background: rgba(33, 63, 125, 0.16);
+  background: #e9d5ec;
   min-width: 90px;
   max-width: 90px;
   height: 90px;

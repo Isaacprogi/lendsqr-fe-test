@@ -40,6 +40,11 @@
   padding: 4rem;
   position: relative;
 }
+.log-in-page section.form-section .error {
+  height: 3rem;
+  margin: 0.3rem;
+  color: red;
+}
 .log-in-page section.form-section .logo {
   display: flex;
   align-items: center;

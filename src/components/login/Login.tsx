@@ -5,6 +5,7 @@ import UNION from '../../assets/svg/login/union.svg'
 import LENDSQR from '../../assets/svg/login/lendsqr.svg'
 import { useAuthContext } from '../../hooks/useAuthContext'
 import { useNavigate } from 'react-router-dom'
+import { useEffect } from 'react'
 
 
 
@@ -12,12 +13,21 @@ export const Login: React.FC = () => {
     const [email, setEmail] = useState<any>('')
     const [password, setPassword] = useState<any>('')
     const [error, setError] = useState<String>('')
-    const {login} = useAuthContext()
+    const { login } = useAuthContext()
+    const [imageLoading, setImageLoading] = useState<boolean>(true)
 
     const emailCheck: string = 'adeji@gmail.com'
     const passwordCheck: string = '12345678'
 
     const navigate = useNavigate()
+
+    useEffect(() => {
+        const image = new Image()
+        image.src = PABLOSVG
+        image.onload = () => {
+            setImageLoading(false)
+        }
+    }, [])
 
 
     const handleSubmit = (e: React.FormEvent) => {
@@ -26,12 +36,12 @@ export const Login: React.FC = () => {
             login()
             return navigate('/')
         } else {
-            setError('invalid credentials')
+            setError('Invalid credentials')
             console.log(error)
         }
     }
 
-    return (
+    return imageLoading === false ? (
         <div className='log-in-page'>
 
             <section className="logo-section">
@@ -45,8 +55,8 @@ export const Login: React.FC = () => {
 
 
             <section className="form-section">
-                
-            <span className='logo'>
+
+                <span className='logo'>
                     <img className='union' src={UNION} alt="" />
                     <img className='lendsqr' src={LENDSQR} alt="" />
                 </span>
@@ -64,10 +74,17 @@ export const Login: React.FC = () => {
 
                     <form onSubmit={handleSubmit}>
                         <div>
-                            <input placeholder='Email' type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+                            <input placeholder='Email' type="email" value={email} onChange={(e) => {
+                                setEmail(e.target.value)
+                                setError("")
+                            }
+                            } />
                         </div>
                         <div>
-                            <input placeholder='Password' type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+                            <input placeholder='Password' type="password" value={password} onChange={(e) => {
+                                setPassword(e.target.value)
+                                setError("")
+                            }} />
                         </div>
                         <span className='forgot-password'>
                             FORGOT PASSWORD?
@@ -76,12 +93,14 @@ export const Login: React.FC = () => {
                             <span>LOG IN</span>
                         </button>
                     </form>
-
+                    <span className="error">
+                        {error && error}
+                    </span>
                 </div>
 
             </section>
 
 
         </div>
-    )
+    ) : <></>
 }
