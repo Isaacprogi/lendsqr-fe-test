@@ -1,0 +1,109 @@
+.sidebar {
+  min-height: 100%;
+  font-family: sans-serif;
+  box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.04);
+  display: block;
+  background-color: white;
+  width: 100%;
+  padding-bottom: 1rem;
+}
+.sidebar .top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #213F7D;
+}
+.sidebar .top .org {
+  margin-top: 2rem;
+}
+.sidebar .top > a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 1rem;
+  padding-left: 2rem;
+}
+.sidebar .top > a:focus {
+  background-color: #d9ebeb;
+}
+.sidebar .top > a:hover {
+  background-color: #e3f3f3;
+}
+.sidebar .top > a .top-bottom-icon-duo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 0.4rem;
+}
+.sidebar .top > a .top-bottom-icon-duo .dash-board-bottom {
+  margin-top: -5px;
+}
+.sidebar .middle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+.sidebar .middle h3 {
+  width: 100%;
+  margin-top: 2rem;
+  padding-left: 2rem;
+}
+.sidebar .middle a {
+  width: 100%;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.sidebar .middle a:focus {
+  background-color: #d9ebeb;
+}
+.sidebar .middle a:hover {
+  background-color: #e3f3f3;
+}
+.sidebar .middle a img {
+  margin-right: 0.5rem;
+}
+.sidebar .middle .end-section {
+  width: 100%;
+  padding-bottom: 2rem;
+  border-bottom: 0.5px solid rgb(230, 221, 221);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.sidebar .middle .log-out-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 2rem;
+  color: #213F7D;
+}
+.sidebar .middle .log-out-section img {
+  margin-right: 0.5rem;
+}
+.sidebar .middle .log-out-section .log-out {
+  margin-top: 3rem;
+  font-weight: 400;
+  font-size: 16px;
+}
+.sidebar .middle .log-out-section .v1 {
+  margin-top: 2rem;
+}
+.sidebar .bottom {
+  background-color: black;
+}/*# sourceMappingURL=SideBar.css.map */
