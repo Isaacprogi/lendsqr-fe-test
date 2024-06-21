@@ -1,0 +1,17 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Users Component Tests > should match snapshot 1`] = `
+<div
+  className="skeleton"
+>
+  <div
+    className="skeleton-line-1"
+  />
+  <div
+    className="skeleton-line-2"
+  />
+  <div
+    className="skeleton-line-3"
+  />
+</div>
+`;

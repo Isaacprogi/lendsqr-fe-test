@@ -1,0 +1,51 @@
+.show-sidebar-button {
+  background-color: #9fa8b7;
+  position: fixed;
+  cursor: pointer;
+  top: 10rem;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.5rem;
+  font: 900;
+  font-size: 1.5rem;
+  z-index: 700;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  width: 0.9rem;
+  right: -30px;
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 100%;
+  rotate: 180deg;
+}
+.show-sidebar-button:hover {
+  background-color: #2d4f94;
+}
+@media screen and (min-width: 768px) {
+  .show-sidebar-button {
+    display: none;
+  }
+}
+
+.show-sidebar-button.visible {
+  right: 0;
+}
+
+.show-sidebar-button.reduce {
+  width: 0.7rem;
+}
+
+.show-sidebar-button.enlarge {
+  width: 2rem;
+}/*# sourceMappingURL=SideBarButton.css.map */

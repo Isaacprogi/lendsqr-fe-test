@@ -1,0 +1,259 @@
+.sidebar {
+  min-height: 100%;
+  font-family: sans-serif;
+  -webkit-box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.04);
+          box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.04);
+  display: block;
+  background-color: white;
+  width: 100%;
+  padding-bottom: 1rem;
+}
+.sidebar .profile-more-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #213F7D;
+  gap: 1rem;
+  border-bottom: 1px solid rgb(236, 234, 231);
+}
+.sidebar .profile-more-options .profile-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+.sidebar .profile-more-options .profile-info .avatar {
+  border-radius: 100%;
+  overflow: hidden;
+  width: 3rem;
+  height: 3rem;
+}
+.sidebar .profile-more-options .profile-info .avatar img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+  height: 100%;
+}
+.sidebar .profile-more-options .org {
+  margin-top: 2rem;
+}
+.sidebar .profile-more-options > a {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 1rem;
+  padding-left: 2rem;
+}
+.sidebar .profile-more-options > a:focus {
+  background-color: #d9ebeb;
+}
+.sidebar .profile-more-options > a:hover {
+  background-color: #e3f3f3;
+}
+.sidebar .profile-more-options > a .top-bottom-icon-duo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 0.4rem;
+}
+.sidebar .profile-more-options > a .top-bottom-icon-duo .dash-board-bottom {
+  margin-top: -5px;
+}
+@media screen and (min-width: 768px) {
+  .sidebar .profile-more-options {
+    display: none;
+  }
+}
+.sidebar .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #213F7D;
+  gap: 1rem;
+}
+.sidebar .top .org {
+  margin-top: 2rem;
+}
+.sidebar .top > a {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 1rem;
+  padding-left: 2rem;
+}
+.sidebar .top > a:focus {
+  background-color: #d9ebeb;
+}
+.sidebar .top > a:hover {
+  background-color: #e3f3f3;
+}
+.sidebar .top > a .top-bottom-icon-duo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 0.4rem;
+}
+.sidebar .top > a .top-bottom-icon-duo .dash-board-bottom {
+  margin-top: -5px;
+}
+.sidebar .middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+}
+.sidebar .middle h3 {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+.sidebar .middle a {
+  width: 100%;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.sidebar .middle a:focus {
+  background-color: #d9ebeb;
+}
+.sidebar .middle a:hover {
+  background-color: #e3f3f3;
+}
+.sidebar .middle a img {
+  margin-right: 0.5rem;
+}
+.sidebar .middle .end-section {
+  width: 100%;
+  padding-bottom: 2rem;
+  border-bottom: 0.5px solid rgb(230, 221, 221);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.sidebar .middle .log-out-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-left: 2rem;
+  color: #213F7D;
+}
+.sidebar .middle .log-out-section img {
+  margin-right: 0.5rem;
+}
+.sidebar .middle .log-out-section .log-out {
+  margin-top: 3rem;
+  font-weight: 400;
+  font-size: 16px;
+}
+.sidebar .middle .log-out-section .v1 {
+  margin-top: 2rem;
+}
+.sidebar .bottom {
+  background-color: black;
+}/*# sourceMappingURL=SideBar.css.map */

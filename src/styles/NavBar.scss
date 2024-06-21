@@ -1,0 +1,313 @@
+@import '../styles/variables/mixins';
+@import '../styles/variables/variables';
+
+.nav-bar{
+    width: 100%;
+    height: 100px;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    background:$whiteColor;
+    box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.04);
+    position: sticky;
+    top: 0;
+    z-index: 900;
+
+    .logo-search-section{
+     display: flex;
+     align-items: center;
+     justify-content: flex-start;
+     width: 100%;
+     margin-left: 15px;
+
+
+
+     .search{
+         display: flex;
+         align-items: center;
+         justify-content: flex-start;
+         width: 90%;
+         height: 40px;
+         background:$whiteColor;
+         border: 1px solid #a0acc5;
+         border-radius: 8px;
+         overflow: hidden;
+         margin-right: 1rem;
+         padding-left: 1rem;
+
+         @include largeDevices {
+            margin-left: 6rem;  
+            max-width: 400px; 
+        }
+         
+
+         input{
+             outline: none;
+             border: none;
+             height: 100%;
+             width: 100%;
+
+         }
+         
+         
+
+         .search-icons-box{
+             width: 56px;
+             background: #39CDCC;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             height: 100%;
+             cursor: pointer;
+
+
+             .search-icon{
+                 color: $whiteColor;
+             }
+         }
+
+         
+     }
+
+     .logo{
+         display: flex;
+         align-items: center;
+         justify-content: flex-start;
+         margin-right: 1rem;
+
+         .lendsqr{
+            height: 30px;
+            display: none;
+            margin-left: 1rem;
+            
+            @include largeDevices {
+                display: block;      
+            }
+        }
+        
+     }
+
+
+
+    }
+
+
+    .others{
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+        margin-right:2rem;
+
+        @include largeDevices{
+            margin-right: 4rem;
+        }
+
+    
+     
+        img{
+            width: 48px;
+            height:48px;
+            border-radius: 50%;
+            overflow:hidden;
+        }
+
+
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            span{
+                color: #213F7D;
+                font-family: 'Work Sans';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+            }
+        }
+
+        .docs,.notification-icon,div{
+            margin-right: 2rem;
+        }
+        .avatar{
+           margin-right: .8rem;
+        }
+
+        .notification-icon{
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            border-radius: 100%;
+            padding: .2rem;
+
+            &:hover{
+                background-color: rgb(228, 219, 219);
+                transition: all 0.3s ease;
+            }
+        }
+
+        .docs{
+            text-decoration: underline;
+            cursor: pointer;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            color: #213F7D;
+        }
+
+        .drop-down-icon{
+            color: #213F7D;
+            cursor: pointer;
+        }
+
+        @include mediumDevices {
+            display: flex;     
+        }
+
+        
+    }
+
+    .fa-times{
+        color:#009F95;
+        border: none;
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        outline: none;
+    }
+
+
+    .fa-bars{
+         margin-right: 15px;
+         cursor: pointer;
+         border-radius: 100%;
+         display: flex;
+
+         img{
+            width: 100%;
+            height: 100%;
+         }
+
+         .hidden{
+             display: none;
+         }
+    
+
+
+        @include mediumDevices {
+            display: none;     
+        }
+    }
+
+    .fixed-element {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%; 
+        max-width: 18rem;
+        height: 100%; 
+        background-color: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+        z-index: 20;
+        overflow-y: auto;
+      
+        @media (min-width: 768px) {
+          display: none; 
+        }
+      }
+      
+
+    .right-drawer{
+        position: fixed;
+        width: 15rem;
+        background-color: rgb(17, 26, 49);
+        height: max-content;
+        top: 0;
+        right: 0;
+        border-left: .1px solid #dddfe6;
+        border-bottom-left-radius: 10px;
+        transition: all .3s;
+        transform: scale(0) rotate(180deg);
+        transform-origin: top right;
+        padding-bottom: 1rem;
+        z-index: 1000;
+        box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.04);
+
+        .cancel{
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            color: rgb(233, 220, 220);
+            cursor: pointer;
+        }
+
+        .profile-top{
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: flex-start;
+            margin-top: 2rem;
+            color: $whiteColor;
+            
+
+            .avatar{
+               width: 3.5rem;
+               height: 3.5rem;
+               border-radius: 50%;
+               margin-left: 1rem;
+               margin-right: .5rem;
+               overflow: hidden;
+               
+               img{
+                   width: 100%;
+                   height: 100%;
+               }
+            }
+            .others{
+                span{
+                    color: white;
+                }
+            }
+        }
+
+        .drawer-list{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            margin-top:1rem;
+            
+            
+            >span{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                padding: .5rem;
+                cursor: pointer;
+                color: white;
+
+                .drawer-list-icons{
+                    font-size: 1.5rem;
+                    margin-right: .3rem;
+                }
+
+                &:hover{
+                    background-color: #848fa2;
+                }
+                
+            }
+        }
+
+        @include mediumDevices {
+            display: none;     
+        }
+    
+    }
+
+    .visible{
+        transform: scale(1);
+        
+    }
+
+}
+

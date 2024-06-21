@@ -1,0 +1,212 @@
+@import '../styles/variables/mixins';
+
+.log-in-page {
+    width: 100%;
+    height: 100%;
+    // background-color: red;
+
+    section.logo-section{
+        display: none;      
+
+        @include mediumDevices {
+            display: flex;
+            align-items: center;
+            justify-content: center;      
+        }
+
+        img{
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .logo{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            position: absolute;
+            top: 50px;
+            left:92px;
+
+            img.union{
+                width: 24.75px;
+                height: 25px;
+            }
+            img.lendsqr{
+                margin-top: .4rem;
+                width: 138px;
+                height: 30px;
+            }
+
+        }
+
+    }
+    section.form-section{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        padding: 1rem;
+        position: relative;
+        max-width: 40rem;
+        margin: 0 auto;
+
+        .error{
+            height: 3rem;
+            margin: .3rem;
+            color: rgb(189, 68, 68);
+        }
+
+        .logo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img.union{
+                width: 24.75px;
+                height: 25px;
+            }
+            img.lendsqr{
+                margin-top: .4rem;
+                width: 138px;
+                height: 30px;
+            }
+
+            @include mediumDevices {
+                display: none;
+            }
+        }
+
+
+        .container{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+     
+            h1{
+                line-height: 54.64px;
+                font-weight: 700;
+                size: 40px;
+                color: #213F7D;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            
+            span.login-details-note{
+                margin-bottom: 1rem;
+                size: 20px;
+                color: $textSecondary;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin-bottom: 4rem;
+     
+                
+            }
+            
+            form{
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                flex-direction: column;
+                width: 100%;
+                
+               
+                div{
+                    width: 100%;
+                    position: relative;
+                    margin-bottom: 1rem;
+                    background: $whiteColor;
+                    border: 2px solid rgba(84, 95, 125, 0.15);
+                    border-radius: 5px;
+     
+                    input{
+                        width: 100%;
+                        height: 50px;
+                        border: none;
+                        outline: none;
+                        padding-inline:.2rem ;
+                    }
+                }
+
+                .toggle-password {
+                    position: absolute;
+                    right: 10px;
+                    background: none;
+                    border: none;
+                    cursor: pointer;
+                    font-size: 1rem;
+                    padding: 0;
+                    margin: 0;
+                    color: #39CDCC;
+                    transition: background 0.3s ease, transform 0.3s ease;
+
+                    &:hover{
+                        color: rgb(99, 85, 85);
+
+                    }
+                }
+
+                .password-input-container {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                }
+     
+                a.forgot-password{
+                 font-family: 'Avenir Next';
+                 font-style: normal;
+                 font-weight: 600;
+                 font-size: 12px;
+                 line-height: 16px;      
+                 text-align: right;
+                 letter-spacing: 0.1em;
+                 text-transform: uppercase;
+                 margin-bottom: 1rem;
+                 color: #39CDCC;
+                 cursor: pointer;
+                 text-decoration: none;
+                 transition: background 0.3s ease, transform 0.3s ease;
+
+                    &:hover{
+                        color: rgb(99, 85, 85);
+
+                    }
+                }
+     
+                button {
+                    width: 100%;
+                    background: #39CDCC;
+                    border-radius: 8px;
+                    padding: 1rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    outline: none;
+                    cursor: pointer;
+                    border: none;
+                    transition: background 0.3s ease, transform 0.3s ease;
+                
+                    span {
+                        font-family: sans-serif;
+                        text-align: center;
+                        color: $whiteColor;
+                    }
+                
+                    &:hover {
+                        background: darken(#39CDCC, 10%);
+                    }
+                }
+                
+            }
+         }
+    }
+
+    
+    
+
+    @include mediumDevices {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+
+}

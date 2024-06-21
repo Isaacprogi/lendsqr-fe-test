@@ -1,0 +1,29 @@
+@import './variables';
+
+@mixin largeDevices {
+    @media screen and (min-width: #{$largeDevices}){
+        @content;
+    }
+}
+
+@mixin mediumDevices {
+    @media screen and (min-width: #{$mediumDevices}){
+        @content;
+    }
+}
+
+@mixin smallDevices {
+    @media screen and (min-width: #{$smallDevices}){
+        @content;
+    }
+}
+@mixin smallerDevices {
+    @media screen and (min-width: #{$smallerDevices}){
+        @content;
+    }
+}
+@mixin largerDevices {
+    @media screen and (min-width: #{$largerDevices}){
+        @content;
+    }
+}

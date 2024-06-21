@@ -1,0 +1,35 @@
+.dash-board {
+  height: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  overflow-x: hidden;
+}
+@media screen and (min-width: 568px) {
+  .dash-board {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+.dash-board h1 {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  color: #213F7D;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 568px) {
+  .dash-board {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}/*# sourceMappingURL=DashBoard.css.map */

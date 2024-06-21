@@ -1,0 +1,47 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`test for NavBar component > should match snapshot 1`] = `
+<div>
+  <span
+    className="circle"
+  >
+    <img
+      alt="status-board-logo"
+      src="/src/assets/images/isaac.jpg"
+    />
+  </span>
+  <span
+    className="title"
+  >
+    Users
+  </span>
+  <span
+    className="value"
+  >
+    2000
+  </span>
+</div>
+`;
+
+exports[`test for NavBar component should match snapshot 1`] = `
+<div>
+  <span
+    className="circle"
+  >
+    <img
+      alt="status-board-logo"
+      src="isaac.jpg"
+    />
+  </span>
+  <span
+    className="title"
+  >
+    Users
+  </span>
+  <span
+    className="value"
+  >
+    2000
+  </span>
+</div>
+`;

@@ -1,0 +1,165 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`test for NavBar component > should match snapshot 1`] = `
+<div
+  className="table-data"
+  data-testid="user-data-box"
+>
+  <span
+    className="organization"
+  >
+    lendsqr
+  </span>
+  <span
+    className="username"
+  >
+    rema
+  </span>
+  <span
+    className="email"
+  >
+    rema@gmail.com
+  </span>
+  <span
+    className="phone-number"
+  >
+    09157065783
+  </span>
+  <span
+    className="date-joined"
+  >
+    Invalid Date
+  </span>
+  <span
+    className="status-span"
+  >
+    <div
+      className="status-options  "
+      data-testid="status-options-id"
+    >
+      <span
+        data-testid="view-list-span"
+        onClick={[Function]}
+      >
+        <img
+          alt=""
+          src="/src/assets/svg/user-activities/ViewDetails.svg"
+        />
+        View Details
+      </span>
+      <span
+        data-testid="black-list-span"
+        onClick={[Function]}
+      >
+        <img
+          alt=""
+          src="/src/assets/svg/user-activities/BlacklistUser.svg"
+        />
+        Blacklist User
+      </span>
+      <span
+        data-testid="active-list-span"
+        onClick={[Function]}
+      >
+        <img
+          alt=""
+          src="/src/assets/svg/user-activities/ActivateUser.svg"
+        />
+        Activate User
+      </span>
+    </div>
+    <div
+      className="pending Active"
+    >
+      Active
+    </div>
+    <img
+      alt="three-dots"
+      onClick={[Function]}
+      src="/src/assets/svg/user-activities/dots-vertical.svg"
+    />
+  </span>
+</div>
+`;
+
+exports[`test for NavBar component should match snapshot 1`] = `
+<div
+  className="table-data"
+  data-testid="user-data-box"
+>
+  <span
+    className="organization"
+  >
+    lendsqr
+  </span>
+  <span
+    className="username"
+  >
+    rema
+  </span>
+  <span
+    className="email"
+  >
+    rema@gmail.com
+  </span>
+  <span
+    className="phone-number"
+  >
+    09157065783
+  </span>
+  <span
+    className="date-joined"
+  >
+    Invalid Date
+  </span>
+  <span
+    className="status-span"
+  >
+    <div
+      className="status-options  "
+      data-testid="status-options-id"
+    >
+      <span
+        data-testid="view-list-span"
+        onClick={[Function]}
+      >
+        <img
+          alt=""
+          src="ViewDetails.svg"
+        />
+        View Details
+      </span>
+      <span
+        data-testid="black-list-span"
+        onClick={[Function]}
+      >
+        <img
+          alt=""
+          src="BlacklistUser.svg"
+        />
+        Blacklist User
+      </span>
+      <span
+        data-testid="active-list-span"
+        onClick={[Function]}
+      >
+        <img
+          alt=""
+          src="ActivateUser.svg"
+        />
+        Activate User
+      </span>
+    </div>
+    <div
+      className="pending Active"
+    >
+      Active
+    </div>
+    <img
+      alt="three-dots"
+      onClick={[Function]}
+      src="dots-vertical.svg"
+    />
+  </span>
+</div>
+`;

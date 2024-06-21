@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;400&display=swap');
+@import './styles/variables/mixins';
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.App {
+    width: 100%;
+    height: 100vh;
+    overflow-y:auto;
+    overflow-x: auto;
+    position: relative;
+    overflow-x: hidden;
+    
+
+    .side-bar-slide{
+        height: calc(100% - 100px);
+        position: fixed;
+        transition: all 0.5s ease-in;
+        left: -100%;
+        overflow-y: auto;
+        top: 100px;
+        width: 100%;
+        /* IE and Edge */
+        -ms-overflow-style: none;  
+        scrollbar-width: none;
+        z-index: 600;
+        
+    //    -webkit-transition: all 0.25s;
+
+
+        &::-webkit-scrollbar {
+            display: none;
+          }
+
+        @include smallDevices{
+            width: 70%;
+            box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.04);
+        }
+
+        @include mediumDevices{
+            display: none;
+        }
+    }
+
+    .side-bar-slide.visible{
+            left:0;  
+    }
+}
+
+
+
+.body-section{
+    width: 100%;
+
+    
+    @include mediumDevices{
+        display: grid;
+        grid-template-columns: 15rem auto;
+    }
+     
+    .side-bar{
+        display: none;
+        width: 16rem;
+        
+        @include mediumDevices{
+            display: block;
+        }
+    }
+
+    
+
+
+
+
+}
+
+@keyframes shimmer {
+    0% {
+      background-position: -1000px 0;
+    }
+    100% {
+      background-position: 1000px 0;
+    }
+  }
+
+  
+  .skeleton {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
+    margin-top: 5rem;
+    align-items: center;
+    
+    .skeleton-line-1 {
+      height: 20px;
+      background: #f0f0f0;
+      background-image: linear-gradient(90deg, #f0f0f0 0%, #e0e0e0 50%, #f0f0f0 100%);
+      background-size: 2000px 100%;
+      animation: shimmer 1.5s infinite;
+      border-radius: 4px;
+      width: 100%;
+      max-width: 20rem;
+    }
+    .skeleton-line-2 {
+      height: 20px;
+      background: #f0f0f0;
+      background-image: linear-gradient(90deg, #f0f0f0 0%, #e0e0e0 50%, #f0f0f0 100%);
+      background-size: 2000px 100%;
+      animation: shimmer 1.5s infinite;
+      border-radius: 4px;
+      width: 100%;
+      max-width: 15rem;
+    }
+    .skeleton-line-3 {
+      height: 20px;
+      background: #f0f0f0;
+      background-image: linear-gradient(90deg, #f0f0f0 0%, #e0e0e0 50%, #f0f0f0 100%);
+      background-size: 2000px 100%;
+      animation: shimmer 1.5s infinite;
+      border-radius: 4px;
+      width: 100%;
+      max-width: 10rem;
+    }
+  }
+  
+  
+  

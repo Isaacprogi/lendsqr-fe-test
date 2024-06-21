@@ -1,0 +1,39 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`test for NavBar component > should match snapshot 1`] = `
+<div
+  className="details"
+>
+  <span
+    className="data-value"
+    data-testid="dataIdTitle"
+  >
+    dataTitle
+  </span>
+  <span
+    className="data-title"
+    data-testid="dataIdValue"
+  >
+    dataValue
+  </span>
+</div>
+`;
+
+exports[`test for NavBar component should match snapshot 1`] = `
+<div
+  className="details"
+>
+  <span
+    className="data-value"
+    data-testid="dataIdTitle"
+  >
+    dataTitle
+  </span>
+  <span
+    className="data-title"
+    data-testid="dataIdValue"
+  >
+    dataValue
+  </span>
+</div>
+`;

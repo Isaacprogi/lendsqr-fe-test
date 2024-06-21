@@ -1,0 +1,39 @@
+@import '../styles/variables/mixins';
+
+
+
+.dash-board{
+    height: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-x: hidden;
+
+    @include smallDevices{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+  
+    h1{
+     font-family: 'Work Sans';
+     font-style: normal;
+     font-weight: 500;
+     font-size: 24px;
+     color: #213F7D;          
+     margin-top: 3rem;
+     margin-bottom: 3rem;
+    }
+
+           
+
+     @include smallDevices {
+         flex-direction: row;
+         justify-content: space-between;
+         align-items: flex-start;
+      }
+
+      
+
+             
+}  
+

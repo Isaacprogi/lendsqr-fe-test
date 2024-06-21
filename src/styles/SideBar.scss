@@ -1,0 +1,217 @@
+@import '../styles/variables/mixins';
+
+
+.sidebar{
+    min-height: 100%;
+    font-family: sans-serif;
+    box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.04);
+    display: block;
+    background-color :$whiteColor;
+    width: 100%;
+    padding-bottom: 1rem;
+    
+    
+   .profile-more-options{
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start;
+       justify-content: flex-start;
+       font-family: 'Work Sans';
+       font-style: normal;
+       font-weight: 400;
+       font-size: 16px;
+       line-height: 19px;
+       color: $textPrimary;
+       gap: 1rem;
+       border-bottom: 1px solid rgb(236, 234, 231);
+
+       .profile-info{
+        display: flex;
+        gap: 1rem;
+        padding: 1rem;
+        align-items: center;
+        width: 100%;
+        margin-top: 2rem;
+
+        .avatar{
+            border-radius: 100%;
+            overflow: hidden;
+            width: 3rem;
+            height: 3rem;
+
+            img{
+                object-fit: cover;
+                object-position: center;
+                width: 100%;
+                height: 100%;
+            }
+        }
+       }
+
+
+       .org{
+        margin-top: 2rem;
+       }
+       
+       >a{
+           width: 100%;
+           display: flex;
+           align-items: center;
+           justify-content: flex-start;
+           cursor: pointer;
+           text-decoration: none;
+           padding: 1rem;
+           padding-left: 2rem;
+
+           &:focus{
+            background-color: #d9ebeb;
+        }
+
+         &:hover{
+            background-color: #e3f3f3;
+          }
+           
+           .top-bottom-icon-duo {
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               flex-direction: column;
+               margin-right: .4rem;
+
+               .dash-board-bottom{
+                   margin-top: -5px;
+               }
+           }
+       }
+
+       @include mediumDevices {
+        display: none;     
+    }
+
+   }
+   .top{
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start;
+       justify-content: flex-start;
+       font-family: 'Work Sans';
+       font-style: normal;
+       font-weight: 400;
+       font-size: 16px;
+       line-height: 19px;
+       color: $textPrimary;
+       gap: 1rem;
+
+
+       .org{
+        margin-top: 2rem;
+       }
+       
+       >a{
+           width: 100%;
+           display: flex;
+           align-items: center;
+           justify-content: flex-start;
+           cursor: pointer;
+           text-decoration: none;
+           padding: 1rem;
+           padding-left: 2rem;
+
+           &:focus{
+            background-color: #d9ebeb;
+        }
+
+         &:hover{
+            background-color: #e3f3f3;
+          }
+           
+           .top-bottom-icon-duo {
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               flex-direction: column;
+               margin-right: .4rem;
+
+               .dash-board-bottom{
+                   margin-top: -5px;
+               }
+           }
+       }
+
+       
+
+   }
+   .middle{
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start;
+       width: 100%;
+
+       h3{
+         width: 100%;
+         margin-top: 2rem;
+         margin-bottom: 1rem;
+         padding-left: 2rem;
+       }
+
+       a{
+           width: 100%;
+           padding-left: 2rem;
+           padding-top: 1rem ;
+           padding-bottom: 1rem;
+           cursor: pointer;
+           text-decoration: none;
+           display: flex;
+           align-items: center;
+          
+           &:focus{
+               background-color: #d9ebeb;
+           }
+
+           &:hover{
+               background-color: #e3f3f3;
+           }
+
+           img{
+               margin-right:.5rem;
+           }        
+       }
+
+       .end-section{
+        width: 100%;
+        padding-bottom: 2rem;
+        border-bottom: .5px solid rgb(230, 221, 221);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+     }
+
+     .log-out-section{
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+         padding-left: 2rem;
+         color: $textPrimary;
+
+         img{
+             margin-right: .5rem;
+         }
+
+         .log-out{
+             margin-top: 3rem;
+             font-weight: 400;
+             font-size: 16px;
+
+         }
+         .v1{
+             margin-top: 2rem;
+         }
+     }
+   }
+   .bottom{
+       background-color: black;
+   }
+
+    
+}

@@ -1,0 +1,232 @@
+.log-in-page {
+  width: 100%;
+  height: 100%;
+}
+.log-in-page section.logo-section {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .log-in-page section.logo-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.log-in-page section.logo-section img {
+  width: 100%;
+  max-width: 600px;
+}
+.log-in-page section.logo-section .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: absolute;
+  top: 50px;
+  left: 92px;
+}
+.log-in-page section.logo-section .logo img.union {
+  width: 24.75px;
+  height: 25px;
+}
+.log-in-page section.logo-section .logo img.lendsqr {
+  margin-top: 0.4rem;
+  width: 138px;
+  height: 30px;
+}
+.log-in-page section.form-section {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 1rem;
+  position: relative;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+.log-in-page section.form-section .error {
+  height: 3rem;
+  margin: 0.3rem;
+  color: rgb(189, 68, 68);
+}
+.log-in-page section.form-section .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.log-in-page section.form-section .logo img.union {
+  width: 24.75px;
+  height: 25px;
+}
+.log-in-page section.form-section .logo img.lendsqr {
+  margin-top: 0.4rem;
+  width: 138px;
+  height: 30px;
+}
+@media screen and (min-width: 768px) {
+  .log-in-page section.form-section .logo {
+    display: none;
+  }
+}
+.log-in-page section.form-section .container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.log-in-page section.form-section .container h1 {
+  line-height: 54.64px;
+  font-weight: 700;
+  size: 40px;
+  color: #213F7D;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.log-in-page section.form-section .container span.login-details-note {
+  margin-bottom: 1rem;
+  size: 20px;
+  color: #545F7D;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 4rem;
+}
+.log-in-page section.form-section .container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+.log-in-page section.form-section .container form div {
+  width: 100%;
+  position: relative;
+  margin-bottom: 1rem;
+  background: white;
+  border: 2px solid rgba(84, 95, 125, 0.15);
+  border-radius: 5px;
+}
+.log-in-page section.form-section .container form div input {
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-inline: 0.2rem;
+}
+.log-in-page section.form-section .container form .toggle-password {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+  color: #39CDCC;
+  -webkit-transition: background 0.3s ease, -webkit-transform 0.3s ease;
+  transition: background 0.3s ease, -webkit-transform 0.3s ease;
+  transition: background 0.3s ease, transform 0.3s ease;
+  transition: background 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.log-in-page section.form-section .container form .toggle-password:hover {
+  color: rgb(99, 85, 85);
+}
+.log-in-page section.form-section .container form .password-input-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.log-in-page section.form-section .container form a.forgot-password {
+  font-family: "Avenir Next";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: right;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: #39CDCC;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-transition: background 0.3s ease, -webkit-transform 0.3s ease;
+  transition: background 0.3s ease, -webkit-transform 0.3s ease;
+  transition: background 0.3s ease, transform 0.3s ease;
+  transition: background 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.log-in-page section.form-section .container form a.forgot-password:hover {
+  color: rgb(99, 85, 85);
+}
+.log-in-page section.form-section .container form button {
+  width: 100%;
+  background: #39CDCC;
+  border-radius: 8px;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  -webkit-transition: background 0.3s ease, -webkit-transform 0.3s ease;
+  transition: background 0.3s ease, -webkit-transform 0.3s ease;
+  transition: background 0.3s ease, transform 0.3s ease;
+  transition: background 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.log-in-page section.form-section .container form button span {
+  font-family: sans-serif;
+  text-align: center;
+  color: white;
+}
+.log-in-page section.form-section .container form button:hover {
+  background: #2ba8a8;
+}
+@media screen and (min-width: 768px) {
+  .log-in-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}/*# sourceMappingURL=Login.css.map */

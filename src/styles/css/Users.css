@@ -1,0 +1,567 @@
+.user-board {
+  height: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  overflow-x: hidden;
+  width: 100%;
+}
+@media screen and (min-width: 568px) {
+  .user-board {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+.user-board h1 {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  color: #213F7D;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.user-board .status-board {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+.user-board .status-board div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 10rem;
+  background: white;
+  border: 1px solid rgba(33, 63, 125, 0.06);
+  -webkit-box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+          box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  height: 160px;
+}
+@media screen and (min-width: 450px) {
+  .user-board .status-board div {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 2rem;
+  }
+}
+.user-board .status-board div span.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #e9d5ec;
+  cursor: pointer;
+}
+.user-board .status-board div .title {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #545F7D;
+  margin-block: 1rem;
+}
+.user-board .status-board div .value {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #213F7D;
+}
+@media screen and (min-width: 568px) {
+  .user-board .status-board div {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.user-board .table-container {
+  width: 100%;
+  height: 750px;
+  margin-top: 1rem;
+  border: 1px solid rgba(33, 63, 125, 0.06);
+  -webkit-box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+          box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  position: relative;
+}
+.user-board .table-container .spinner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.user-board .table-container .table {
+  width: 100%;
+}
+.user-board .table-container .table .table-titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.user-board .table-container .table .table-titles span {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0.7rem;
+  min-width: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.user-board .table-container .table .table-titles span img {
+  margin-left: 0.5rem;
+  height: 10.67px;
+  width: 16px;
+}
+.user-board .table-container .table .table-titles .email, .user-board .table-container .table .table-titles .date-joined, .user-board .table-container .table .table-titles .phone-number, .user-board .table-container .table .table-titles .organization {
+  display: none;
+}
+@media screen and (min-width: 450px) {
+  .user-board .table-container .table .table-titles .email {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media screen and (min-width: 988px) {
+  .user-board .table-container .table .table-titles .phone-number, .user-board .table-container .table .table-titles .organization {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .user-board .table-container .table .table-titles .date-joined {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.user-board .table-container .table .table-data-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.user-board .table-container .table .table-data-container .table-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+.user-board .table-container .table .table-data-container .table-data .cover {
+  width: 93%;
+  height: 100%;
+  position: absolute;
+  cursor: pointer;
+}
+.user-board .table-container .table .table-data-container .table-data span {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0.7rem;
+  min-width: 6rem;
+  word-break: break-all;
+}
+.user-board .table-container .table .table-data-container .table-data :nth-last-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+.user-board .table-container .table .table-data-container .table-data :nth-last-child(1) .status-options {
+  position: absolute;
+  background-color: white;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  border-radius: 0.4rem;
+  z-index: 400;
+  border: 1px solid rgba(84, 95, 125, 0.04);
+  -webkit-box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+          box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  width: 12rem;
+  top: 0;
+  right: 2.6rem;
+}
+.user-board .table-container .table .table-data-container .table-data :nth-last-child(1) .status-options span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.user-board .table-container .table .table-data-container .table-data :nth-last-child(1) .status-options span:hover {
+  background-color: #e3f3f3;
+}
+.user-board .table-container .table .table-data-container .table-data :nth-last-child(1) .status-options span img {
+  cursor: pointer;
+}
+.user-board .table-container .table .table-data-container .table-data :nth-last-child(1) .visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.user-board .table-container .table .table-data-container .table-data :nth-last-child(1) img {
+  margin-right: 0.6rem;
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+.user-board .table-container .table .table-data-container .table-data :nth-last-child(1) div {
+  text-overflow: ellipsis;
+}
+.user-board .table-container .table .table-data-container .table-data :nth-last-child(1) div.Inactive {
+  color: rgb(84, 95, 125);
+  background: rgba(84, 95, 125, 0.06);
+  border-radius: 100px;
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  overflow: hidden;
+}
+.user-board .table-container .table .table-data-container .table-data :nth-last-child(1) div.Active {
+  color: rgb(57, 205, 98);
+  background: rgba(57, 205, 98, 0.06);
+  border-radius: 100px;
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  overflow: hidden;
+}
+.user-board .table-container .table .table-data-container .table-data :nth-last-child(1) div.Blacklisted {
+  color: rgb(228, 3, 59);
+  background: rgba(228, 3, 59, 0.1);
+  border-radius: 100px;
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  overflow: hidden;
+}
+.user-board .table-container .table .table-data-container .table-data :nth-last-child(1) div.Pending {
+  color: rgb(233, 178, 0);
+  background: rgba(233, 178, 0, 0.1);
+  border-radius: 100px;
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  overflow: hidden;
+}
+.user-board .table-container .table .table-data-container .table-data .email, .user-board .table-container .table .table-data-container .table-data .date-joined, .user-board .table-container .table .table-data-container .table-data .phone-number, .user-board .table-container .table .table-data-container .table-data .organization {
+  display: none;
+}
+@media screen and (min-width: 450px) {
+  .user-board .table-container .table .table-data-container .table-data .email {
+    display: block;
+  }
+}
+@media screen and (min-width: 988px) {
+  .user-board .table-container .table .table-data-container .table-data .phone-number, .user-board .table-container .table .table-data-container .table-data .organization {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .user-board .table-container .table .table-data-container .table-data .date-joined {
+    display: block;
+  }
+}
+.user-board .pagination {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 1rem;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #545F7D;
+  padding-bottom: 2rem;
+}
+.user-board .pagination .drop-down {
+  width: 270px;
+  height: 600px;
+  position: absolute;
+  top: -605px;
+  z-index: 400;
+  background: white;
+  border: 1px solid rgba(84, 95, 125, 0.14);
+  -webkit-box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+          box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  left: 0.6rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  padding-block: 1rem;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.user-board .pagination .drop-down div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  color: #545F7D;
+}
+.user-board .pagination .drop-down div span {
+  margin-top: 1rem;
+}
+.user-board .pagination .drop-down div select, .user-board .pagination .drop-down div input {
+  padding: 0.6rem;
+  background: white;
+  border: 1px solid rgba(33, 63, 125, 0.2);
+  border-radius: 8px;
+  margin-top: 0.5rem;
+  outline: none;
+  width: 100%;
+}
+.user-board .pagination .drop-down div select > option {
+  padding: 0.2rem !important;
+  background-color: rgb(163, 171, 194) !important;
+}
+.user-board .pagination .drop-down .controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1rem;
+}
+.user-board .pagination .drop-down .controls :first-child {
+  color: #545F7D;
+  border: 1px solid #545F7D;
+  border-radius: 8px;
+}
+.user-board .pagination .drop-down .controls :last-child {
+  color: white;
+  margin-left: 1rem;
+  background: #39CDCC;
+  border: 1px solid #39CDCC;
+  border-radius: 8px;
+}
+.user-board .pagination .drop-down .controls span {
+  width: 98px;
+  height: 40px;
+  background: white;
+  border: 1px solid rgba(84, 95, 125, 0.14);
+  -webkit-box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+          box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+.user-board .pagination .drop-down.visible {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+.user-board .pagination .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .user-board .pagination .right {
+    margin-bottom: 0;
+  }
+}
+.user-board .pagination .right span {
+  margin-right: 0.4rem;
+  color: rgb(84, 95, 125);
+}
+.user-board .pagination .right .button-chevron-left {
+  rotate: 45deg;
+  width: 100px;
+}
+.user-board .pagination .right > :nth-last-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: rgba(33, 63, 125, 0.1);
+  border-radius: 4px;
+  padding: 0.3rem;
+  color: #213F7D;
+  cursor: pointer;
+}
+.user-board .pagination .right > :nth-last-child(2) img {
+  margin-left: 0.7rem;
+}
+.user-board .pagination .left .pagination-left {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.2rem;
+  gap: 5px;
+}
+.user-board .pagination .left .pagination-left .page-num {
+  padding: 0 5px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-weight: 400;
+}
+.user-board .pagination .left .pagination-left .page-num:hover {
+  background-color: #6d7686;
+  color: white;
+}
+.user-board .pagination .left .pagination-left .page-nav-button-1 {
+  position: relative;
+  background: rgba(33, 63, 125, 0.1);
+  border-radius: 4px;
+  padding: 0.1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-right: 0.5rem;
+}
+.user-board .pagination .left .pagination-left .page-nav-button-1:hover {
+  background-color: #9fa8b7;
+  color: white;
+}
+.user-board .pagination .left .pagination-left .page-nav-button-2 {
+  background: rgba(33, 63, 125, 0.1);
+  border-radius: 4px;
+  padding: 0.1rem;
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  width: 1.4rem;
+  height: 1.4rem;
+}
+.user-board .pagination .left .pagination-left .page-nav-button-2:hover {
+  background-color: #9fa8b7;
+  color: white;
+}
+.user-board .pagination .left .pagination-left .active {
+  background-color: #213F7D;
+}
+@media screen and (min-width: 768px) {
+  .user-board .pagination {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}/*# sourceMappingURL=Users.css.map */
