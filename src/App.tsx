@@ -1,5 +1,5 @@
 import React from 'react'
-import { Login } from './components/login/Login'
+import { Login } from './pages/login/Login'
 import { DashBoard } from './pages/DashBoard/DashBoard'
 import { Users } from './pages/Users/Users'
 import { UserDetails } from './pages/UserDetails/UserDetails'
