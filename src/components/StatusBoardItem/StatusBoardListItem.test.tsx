@@ -1,4 +1,4 @@
-import { fireEvent, render, screen } from '@testing-library/react';
+import {  render, screen } from '@testing-library/react';
 import {StatusBoardItem} from './StatusBoardItem'
 import Img from '../../assets/images/isaac.jpg'
 import renderer from 'react-test-renderer'

@@ -2,7 +2,7 @@ import { Outlet, Navigate } from "react-router-dom";
 import { NavBar } from "../components/NavBar/NavBar";
 import { SideBar } from "../components/SideBar/SideBar";
 
-const PrivateRoutes = ({ auth}:{auth:string}) => {
+const PrivateRoutes = ({ auth}:{auth:boolean}) => {
   return auth ? (
     <>
       <NavBar />

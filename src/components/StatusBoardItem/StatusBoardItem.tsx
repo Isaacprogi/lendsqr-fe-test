@@ -1,4 +1,3 @@
-import React from 'react'
 import { statusBoardItemProps } from '../../utils/types/interface_and_types'
 
 export const StatusBoardItem = ({logo,title,value}:statusBoardItemProps) => {
