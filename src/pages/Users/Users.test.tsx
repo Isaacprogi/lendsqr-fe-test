@@ -2,7 +2,7 @@ import { render, screen, waitFor, act, fireEvent } from '@testing-library/react'
 import { describe, test, vi, beforeEach, afterEach } from 'vitest';
 import { Users } from './Users';
 import { BrowserRouter } from 'react-router-dom';
-import { userMockData } from '../../ts/mockdata';
+import { userMockData } from '../../utils/data/mockdata';
 import axios from 'axios';
 import renderer from 'react-test-renderer';
 

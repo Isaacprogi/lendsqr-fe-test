@@ -4,7 +4,7 @@ import DotsVertical from '../../assets/svg/user-activities/dots-vertical.svg'
 import ActivateUser from '../../assets/svg/user-activities/ActivateUser.svg'
 import BlacklistUser from '../../assets/svg/user-activities/BlacklistUser.svg'
 import ViewDetails from '../../assets/svg/user-activities/ViewDetails.svg'
-import { userDataProps } from '../../ts/interface_and_types'
+import { userDataProps } from '../../utils/types/interface_and_types'
 
 
 export const UserData = ({ user,displayStatusOptions,setDisplayStatusOptions }: userDataProps) => {

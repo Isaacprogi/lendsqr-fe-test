@@ -1,4 +1,4 @@
-import { userDataInfoProps } from '../../ts/interface_and_types'
+import { userDataInfoProps } from '../../utils/types/interface_and_types'
 
 
 export const UserDataInfo = ({dataValue,dataTitle,dataIdValue, dataIdTitle}:userDataInfoProps) => {

@@ -16,8 +16,8 @@ Make sure you have the following software installed on your machine:
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/Isaacprogi/lendsqr-frontent-test.git
-    cd lendsqr-frontent-test
+    git clone https://github.com/Isaacprogi/lendsqr-fe-test.git
+    cd lendsqr-fe-test
     ```
 
 2. **Install dependencies:**
@@ -46,6 +46,7 @@ Navigate to
 ```bash
 http://localhost:5173
 ```
+
 ### Login credentials
 
 ```bash

@@ -11,7 +11,7 @@ import { UserData } from "../../components/UserData/UserData";
 import '../../styles/css/Users.css';
 import ReactPaginate from 'react-paginate';
 import { StatusBoardItem } from "../../components/StatusBoardItem/StatusBoardItem";
-import { userDataFetch } from "../../ts/interface_and_types";
+import { userDataFetch } from "../../utils/types/interface_and_types";
 import axios from 'axios';
 
 export const Users = () => {

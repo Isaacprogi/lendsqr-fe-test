@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { AuthContextType } from '../ts/interface_and_types';
+import { AuthContextType } from '../utils/types/interface_and_types';
 
 
 

@@ -1,6 +1,6 @@
 import { BsChevronLeft } from 'react-icons/bs'
 import { BsChevronRight } from 'react-icons/bs'
-import { sideBarButtonProps } from '../../ts/interface_and_types'
+import { sideBarButtonProps } from '../../utils/types/interface_and_types'
 import '../../styles/css/SideBarButton.css'
 
 export const SideBarButton = ({showSideBar,dropDownActive,setShowSideBar}:sideBarButtonProps) => {

@@ -7,7 +7,7 @@ import { UserDataInfo } from '../../components/UserDataInfo/UserDataInfo'
 import { useParams } from "react-router-dom"
 import '../../styles/css/UserDetails.css'
 import { useNavigate } from 'react-router-dom'
-import { UserDetailsGetApiData } from "../../ts/interface_and_types"
+import { UserDetailsGetApiData } from "../../utils/types/interface_and_types"
 import { useEffect } from "react"
 import axios from 'axios'
 
