@@ -1,4 +1,4 @@
-# Lendsqr Dashboard Design
+# Lendsqr Dashboard Design Test
 
 ## Getting Started
 
